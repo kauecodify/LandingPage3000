@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>TheGlove - Buy</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+   <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+   <style>
+      body, html {
+         margin: 0;
+         padding: 0;
+         height: 100%;
+         font-family: 'Fira Sans', sans-serif;
+         overflow: hidden;
+         position: relative;
+      }
+      .main {
+         display: flex;
+         height: 100vh;
+      }
+      #video-container{
+         position: relative;
+         flex: 1;
+      }
+      #video, #image {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      .coming-soon {
+         position: absolute;
+         top: 50%;
+         left: 25%;
+         flex-wrap: wrap;
+         transform: translate(-50%, -50%);
+         font-size: 70px;
+         color: rgba(255, 255, 255, 0.514);
+         text-align: center;
+         z-index: 1;
+      }
+      .navigation {
+         position: absolute;
+         top: 20px;
+         right: 20px;
+         z-index: 1;
+         background-color: rgba(255, 255, 255, 0.8);
+         padding: 10px 20px;
+         border-radius: 5px;
+      }
+      .navigation ul {
+         list-style: none;
+         padding: 0;
+         margin: 0;
+      }
+      .navigation ul li {
+         display: inline;
+         margin-right: 10px;
+      }
+      .navigation ul li a {
+         text-decoration: none;
+         color: #727272;
+      }
+      .navigation ul li a:hover {
+         color: #000;
+      }
+   </style>
+</head>
+<body>
+   <div class="main">
+      <div id="video-container">
+         <video id="video" autoplay loop muted>
+            <source src="glove1.mp4" type="video/mp4">
+         </video>
+         <div class="coming-soon">book soon</div>
+         
+         <nav class="navigation">
+            <ul>
+               <li><a href="indexx.html">Home</a></li>
+               <li><a href="buy.html">Buy</a></li>
+               <li><a href="contacts.html">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+</body>
+</html>
